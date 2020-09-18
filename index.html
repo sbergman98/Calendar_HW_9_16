@@ -5,27 +5,144 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  
+
+
+  <title>Work Day Scheduler</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>Password Generator</h1>
-    </header>
-    <div class="card">
-      <div class="card-header">
-        <h2>Generate a Password</h2>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <div class="container ">
+
+
+
+
+    <div class="row border ">
+      <div class="col-md-2 border" style="text-align: center;">
+        8:00 AM
       </div>
-      <div class="card-body">
-        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-      </div>
-      <div class="card-footer">
-        <button id="generate" class="btn">Generate Password</button>
+
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row1">
+
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
       </div>
     </div>
+
+    <div class="row border ">
+      <div class="col-md-2 border" style="text-align: center;">
+        9:00 AM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row2">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        10:00 AM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row3">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        11:00 AM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row4">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        12:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row5">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        1:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row6">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        2:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row7">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        3:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row8">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        4:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row9">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        5:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row10">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+    <div class="row border">
+      <div class="col-md-2 border" style="text-align: center;">
+        6:00 PM
+      </div>
+      <input type="text" class="col-md-8 border" style="text-align: left;" id="row11">
+      <div class="col-md-2 border" style="text-align: center;" id="update">
+        <button type="button" class="btn btn-primary">SAVE</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>
 </body>
 
